@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+ }
+
+ html {
+    width: 100%;
+ }
+
+ body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); 
+    width: 80%;
+    margin: 0 auto;
+ }
+
+ .cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+    border-bottom: 0.4px solid #FFF2E7;
+}  
+
+.cabecalho-imagem{
+    height: 100px;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.nav-menu a {
+    cursor: pointer;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+
+.cabecalho-menu-item:hover{
+    color: #2F2325;
+}
+
+.cabecalho i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: #FFF2E7;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.conteudo{
+    margin-bottom: 48px;
+
+}
+
+.conteudo-principal-escrito-sobre-mim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+    gap: 24px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7 ;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+
+.conteudo-segundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+    gap: 24px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.conteudo-segundario-titulo{
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    margin-bottom: 16px;
+}
+
+.conteudo-segundario-paragrafo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+ }
+
+ .center {
+    width: 90%;
+ }
+
+ .rodape{
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+
+ }
+
+
+ .rodape-imagem{
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+ }
+
+ .copy {
+    margin-top: 20px;
+    text-align: center;
+    color: #FFF2E7;
+    font-size: 1.3em;
+ }
+
+
+ @media (max-width:770px) { /*INICIO RESPONSIVIDADE*/
+    html body {
+        width: 100%;
+    }
+
+    .cabecalho{
+        padding: 18px 20px;
+    }
+  
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+
+    .nav-menu.ativo i {
+        display: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 125px ;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); 
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .cabecalho-menu-item{
+        margin: 16px 0;
+    }
+
+    /* --------CORPO PRINCIAPL DO SITE----------- */
+  
+    .conteudo-principal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .conteudo-principal-escrito {
+        align-items: center;
+    }
+
+    .conteudo-principal-escrito .conteudo-principal-escrito-botao {
+        margin-top: 20px;
+    }
+
+    .caixa-imagem-principal {
+        z-index: -1;
+    } 
+
+     .caixa-imagem-principal-sobre-mim{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .conteudo-principal-escrito-sobre-mim{
+        display: flex;
+        z-index: -1;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}/*FIM RESPONSIVIDADE*/
+
+
