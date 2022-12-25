@@ -11,12 +11,13 @@
 
  html {
     width: 100%;
+    overflow-x: hidden;
  }
 
  body {
     font-size: 100%;
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); 
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
  }
 
@@ -27,27 +28,11 @@
     justify-content: space-around;
     padding: 12px;
     border-bottom: 0.4px solid #FFF2E7;
+    background: linear-gradient(180deg, #2F2325 16.62%, #8E5D52 85.61%);
 }  
 
 .cabecalho-imagem{
     height: 100px;
-}
-
-.nav-menu{
-    display: flex;
-    gap: 32px;
-}
-
-.nav-menu a {
-    cursor: pointer;
-}
-
-.cabecalho-menu-item{
-    font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
-    font-weight: 400;
-    font-size: 18px;
-    
 }
 
 .cabecalho-menu-item:hover{
@@ -57,6 +42,41 @@
 .cabecalho i{
     font-size: 30px;
     cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.nav-menu a {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cabecalho-menu-item:hover{
+    color: #2F2325;
+}
+
+/*LUPA DE PESQUISA*/
+.cabecalho i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*MENU MOSTRANDO SELEÇÃO / SELECIONADO*/
+.nav-menu #selecionado {
+    padding-inline: 5px;
+    border-radius: 5px;
+    background-color: #8E5D52;
+    color: rgb(49, 24, 24);
 }
 
 .menu {
@@ -108,6 +128,7 @@
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 64px;
+    text-shadow: 3px 3px black;
     color: #FFF2E7 ;
 }
 
@@ -115,6 +136,7 @@
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
+    text-align: center;
     color: #ECD6C4;
 }
 
@@ -135,7 +157,8 @@
     padding-top: 48px;
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 32px;
+    text-shadow: 3px 3px black;
     color: #FFF2E7;
     margin-bottom: 16px;
 }
@@ -144,6 +167,7 @@
     font-family: 'Sarala', sans-serif;
     font-weight: 300;
     font-size: 18px;
+    text-align: center;
     color: #ECD6C4;
  }
 
@@ -179,6 +203,9 @@
 
     .cabecalho{
         padding: 18px 20px;
+        position: fixed;
+        left: 0;
+        right: 0;
     }
   
     .menu{
@@ -210,7 +237,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); 
+        background: linear-gradient(0deg, #2F2325 16.62%, #8E5D52 85.61%);
         gap: -10px;
         transition: 0.3s;
     }
