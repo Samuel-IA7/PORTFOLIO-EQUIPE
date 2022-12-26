@@ -24,10 +24,15 @@
 
  body {
     font-size: 100%;
-    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); 
     width: 100%;
     margin: 0 auto;
  }
+
+body,
+.cabecalho,
+footer {
+    background: linear-gradient(90deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
 
  .cabecalho{
     display: flex;
@@ -36,7 +41,6 @@
     justify-content: space-around;
     padding: 12px;
     border-bottom: 0.4px solid #FFF2E7;
-    background: linear-gradient(180deg, #2F2325 16.62%, #8E5D52 85.61%);
 }  
 
 .cabecalho-imagem{
@@ -183,9 +187,6 @@
     width: 90%;
  }
 
- footer {
-    background: linear-gradient(180deg, #2F2325 16.62%, #8E5D52 85.61%);
-}
 
  .rodape{
     padding: 32px;
