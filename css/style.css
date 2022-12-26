@@ -237,6 +237,20 @@
         right: 0;
         left: 0;
     }
+
+    .nav-menu {
+        position: fixed;
+        right: -30%;
+        top: 100px;
+        border-radius: 100px;
+        width: 10%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+        transition: 0.5s;
+    }
   
     .menu{
         display: block;
@@ -250,26 +264,22 @@
     .menu.ativo .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-    .nav-menu.ativo{
+
+    .nav-menu.ativo {
         right: 0;
+        border-radius: 0;
+        top: 155px ;
+        gap: 30px;
+        width: 100%;
+        height: 100%;
     }
 
+    /*LUPA PESQUISA*/
     .nav-menu.ativo i {
         display: none;
     }
 
-    .nav-menu {
-        position: fixed;
-        right: -100%;
-        top: 125px ;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: -10px;
-        transition: 0.3s;
-    }
+    
     .cabecalho-menu-item{
         margin: 16px 0;
     }
