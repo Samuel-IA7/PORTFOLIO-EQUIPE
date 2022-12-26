@@ -4,7 +4,8 @@
 
  *SITE DE PORTFÓLIO DA EQUIPE DE SAMUEL E HENRIQUE*
  
+ *Desenvolvedores Front-End*
  
-Com vários projetos que já fizemos e estão finalizados.
+-Vários projetos que já fizemos e estão finalizados.
 
-E alguns exemplos de animações para incrementos em sites.
+-Alguns exemplos de animações para incrementos em sites.
