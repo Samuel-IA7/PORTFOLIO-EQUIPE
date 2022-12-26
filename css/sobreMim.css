@@ -73,7 +73,8 @@
 
 /*MENU MOSTRANDO SELEÇÃO / SELECIONADO*/
 .nav-menu #selecionado {
-    padding-inline: 5px;
+    padding-inline: 8px;
+    padding-block: 2px;
     border-radius: 5px;
     background-color: #8E5D52;
     color: rgb(49, 24, 24);
@@ -201,9 +202,22 @@
         width: 100%;
     }
 
+    body {
+        position: relative;
+        top: 150px;
+    }
+
+    body,
+    .cabecalho,
+    .nav-menu,
+    footer {
+        background: linear-gradient(90deg, #2F2325 16.62%, #8E5D52 85.61%);
+    }
+
     .cabecalho{
         padding: 18px 20px;
         position: fixed;
+        top: 0;
         left: 0;
         right: 0;
     }
@@ -237,7 +251,6 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        background: linear-gradient(0deg, #2F2325 16.62%, #8E5D52 85.61%);
         gap: -10px;
         transition: 0.3s;
     }
