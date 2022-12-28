@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+ }
+
+ html {
+    width: 100%;
+    overflow-x: hidden;
+ }
+
+ body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%); 
+    width: 100%;
+    margin: 0 auto;
+ }
+
+ /*CORES DE FUNDO DO SITE*/
+ body,
+ .cabecalho,
+ footer {
+    background: linear-gradient(90deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+ .cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+    border-bottom: 0.4px solid #FFF2E7;
+}  
+
+.cabecalho-imagem{
+    height: 100px;
+}
+
+.cabecalho-menu-item:hover{
+    color: #2F2325;
+}
+
+.cabecalho i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.nav-menu a {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cabecalho-menu-item:hover{
+    color: #2F2325;
+}
+
+/*LUPA DE PESQUISA*/
+.cabecalho i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*MENU MOSTRANDO SELEÇÃO / SELECIONADO*/
+.nav-menu #selecionado {
+    padding-inline: 8px;
+    padding-block: 2px;
+    border-radius: 5px;
+    background-color: #8E5D52;
+    color: rgb(49, 24, 24);
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: #FFF2E7;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.conteudo{
+    margin-bottom: 48px;
+
+}
+
+.conteudo-principal-escrito-sobre-mim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+    gap: 24px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    text-shadow: 3px 3px black;
+    color: #FFF2E7 ;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #ECD6C4;
+}
+
+
+
+ .center {
+    width: 90%;
+ }
+
+ .rodape{
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+
+ }
+
+
+ .rodape-imagem{
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+ }
+
+ .copy {
+    margin-top: 20px;
+    text-align: center;
+    color: #FFF2E7;
+    font-size: 1.3em;
+ }
+
+
+ @media (max-width:770px) { /*INICIO RESPONSIVIDADE*/
+    html body {
+        width: 100%;
+    }
+
+    body {
+        position: relative;
+        top: 150px;
+    }
+
+    body,
+    .cabecalho,
+    .nav-menu,
+    footer {
+        background: linear-gradient(90deg, #2F2325 16.62%, #8E5D52 85.61%);
+    }
+
+    .cabecalho{
+        padding: 18px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+  
+    .menu{
+        display: block;
+    }
+    
+    .menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu.ativo {
+        right: 0;
+        border-radius: 0;
+        top: 155px ;
+        gap: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-menu.ativo i {
+        display: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -30%;
+        top: 100px;
+        border-radius: 100px;
+        width: 10%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+        transition: 0.5s;
+    }
+
+    .cabecalho-menu-item{
+        margin: 16px 0;
+    }
+
+    /* --------CORPO PRINCIAPL DO SITE----------- */
+  
+    .conteudo-principal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .conteudo-principal-escrito {
+        align-items: center;
+    }
+
+    .conteudo-principal-escrito .conteudo-principal-escrito-botao {
+        margin-top: 20px;
+    }
+
+    .caixa-imagem-principal {
+        z-index: -1;
+    } 
+
+     .caixa-imagem-principal-sobre-mim{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .conteudo-principal-escrito-sobre-mim{
+        display: flex;
+        z-index: -1;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h3,h1 {
+        text-align: center;
+    }
+
+}/*FIM RESPONSIVIDADE*/
+
+
