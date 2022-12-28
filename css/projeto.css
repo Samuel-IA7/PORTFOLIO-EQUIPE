@@ -147,6 +147,104 @@
     color: #ECD6C4;
 }
 
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    
+
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECD6C4;
+    background-image: url('/imagem/path1028.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin: 50px;
+    
+}
+
+.card-text{
+    width: 20%;
+    letter-spacing: 1px;
+    color: rgb(150, 150, 150);
+}
+
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card-wrapper::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    display: block;
+    border: 1px solid #2F2325;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper p{
+    font-size: 0;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+}
+
+.card:hover > .card-wrapper p{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+
 
 
  .center {
