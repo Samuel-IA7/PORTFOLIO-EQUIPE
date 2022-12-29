@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
+@keyframes animacao {
+    0% {opacity: 0;}
+    100% {width: 1;}
+}
 
 * {
     margin: 0;
@@ -113,10 +117,6 @@
     padding: 20px;
 }
 
-@keyframes animacao {
-    0% {width: 0%;}
-    100% {width: 100%;}
-}
 .dev {
     display: flex;
     width: 100%;
