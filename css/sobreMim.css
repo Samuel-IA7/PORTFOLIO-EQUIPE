@@ -183,14 +183,13 @@
  }
 
  .rodape{
-    padding: 32px;
+    padding: 25px;
     border-top: 0.4px solid #FFF2E7;
 
  }
 
-
  .rodape-imagem{
-    height: 80px;
+    height: 60px;
     display: block;
     margin: 0 auto;
  }
@@ -199,7 +198,7 @@
     margin-top: 20px;
     text-align: center;
     color: #FFF2E7;
-    font-size: 1.3em;
+    font-size: 1em;
  }
 
 
