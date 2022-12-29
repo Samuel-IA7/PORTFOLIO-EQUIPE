@@ -103,7 +103,7 @@
 
 .conteudo{
     margin-bottom: 48px;
-
+    margin-top: 50px;
 }
 
 .conteudo-principal-escrito-sobre-mim{
@@ -147,6 +147,11 @@
     color: #ECD6C4;
 }
 
+.caixa-imagem-principal-sobre-mim {
+    margin-top: -100px;
+    margin-bottom: -100px;
+    text-align: center;
+}
 
 .conteudo-segundario{
     display: flex;
