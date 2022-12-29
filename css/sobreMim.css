@@ -25,8 +25,8 @@
  body,
  .cabecalho,
  footer {
-    background: linear-gradient(90deg, #2F2325 16.62%, #8E5D52 85.61%);
-}
+     background: linear-gradient(90deg, #343145 16.62%, #6c6695 85.61%);
+ }
 
  .cabecalho{
     display: flex;
@@ -82,7 +82,7 @@
     padding-inline: 8px;
     padding-block: 2px;
     border-radius: 5px;
-    background-color: #8E5D52;
+    background-color: #d2d0e1;
     color: rgb(49, 24, 24);
 }
 
@@ -216,7 +216,7 @@
     .cabecalho,
     .nav-menu,
     footer {
-        background: linear-gradient(90deg, #2F2325 16.62%, #8E5D52 85.61%);
+        background: linear-gradient(90deg, #343145 16.62%, #6c6695 85.61%);
     }
 
     .cabecalho{
