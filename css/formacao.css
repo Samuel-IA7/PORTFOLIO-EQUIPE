@@ -142,6 +142,13 @@
     border-radius: 10px 20px 30px 40px;
 }
 
+.biografia,
+.formacoes {
+    background-color: #2F2325;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
 .conteudo-principal-escrito-titulo{
     font-family: 'Righteous', cursive;
     font-weight: 400;
@@ -158,6 +165,18 @@
     text-shadow: 3px 3px black;
     color: #FFF2E7 ;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.conteudo-principal-escrito-biografia {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    text-shadow: 3px 3px black;
+    color: #FFF2E7 ;
+    text-align: center;
+    padding-block: 5px;
+    background-color: #553f43;
 }
 
 .conteudo-principal-escrito-texto{
