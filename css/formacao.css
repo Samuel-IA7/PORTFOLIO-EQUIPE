@@ -137,9 +137,9 @@
     width: 50%;
     
     flex-direction: column;
-    padding: 10px 10px 10px 30px;
+    padding: 12px 12px 12px 12px;
     background-color: #47322d;
-    border-radius: 10px 20px 30px 40px;
+    border-radius: 40px 40px 40px 40px;
 }
 
 .biografia,
@@ -175,8 +175,12 @@
     text-shadow: 3px 3px black;
     color: #FFF2E7 ;
     text-align: center;
-    padding-block: 5px;
+    padding-block: 8px;
     background-color: #553f43;
+}
+
+.biografia p {
+    padding: 12px;
 }
 
 .conteudo-principal-escrito-texto{
@@ -184,9 +188,39 @@
     font-weight: 400;
     font-size: 24px;
     text-align: left;
+
     color: #ECD6C4;
     text-align: center;
 }
+
+.titulo-cursos {
+    font-size: 20px;
+    text-shadow: 3px 3px black;
+}
+
+.cursos li h4 {
+    border-bottom: 1px solid black;
+    text-shadow: 3px 3px 5px black;
+}
+
+ul {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: left;
+    color: #ECD6C4;
+    text-align: center;
+    border: 1px solid rgb(159, 105, 105);
+}
+
+li {
+    list-style: none;
+    font-size: 15px;
+    background-color: #553f43;
+    margin-bottom: 8px;
+}
+
+
 
 .rodape{
     padding: 25px;
