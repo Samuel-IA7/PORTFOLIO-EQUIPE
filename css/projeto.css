@@ -348,6 +348,14 @@
         align-items: center;
         text-align: center;
     }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 90%;
+        z-index: 1;
+    }
+
 
     .conteudo-principal-escrito {
         align-items: center;
