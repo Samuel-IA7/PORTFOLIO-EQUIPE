@@ -153,6 +153,11 @@
     text-align: center;
 }
 
+.conteudo-principal-imagem-sobre-mim {
+    width: 200px;
+    margin: 20px 0px 60px 0px;
+}
+
 .conteudo-segundario{
     display: flex;
     flex-direction: column;
