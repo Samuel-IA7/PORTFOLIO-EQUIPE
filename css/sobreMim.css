@@ -30,11 +30,15 @@
 
  .cabecalho{
     display: flex;
+    top: 0;
+    position: fixed;
+    width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding: 12px;
     border-bottom: 0.4px solid #FFF2E7;
+    z-index: 100;
 }  
 
 .cabecalho-imagem{
@@ -103,7 +107,7 @@
 
 .conteudo{
     margin-bottom: 48px;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .conteudo-principal-escrito-sobre-mim{
